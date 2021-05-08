@@ -33,6 +33,9 @@ function draw() {
 
   drawSprites();
   //add styles here
+  fill("white")
+  textSize(20)
+  text("Food remaining : "+foodS,170,100);
 
 
 }
@@ -49,7 +52,5 @@ function writeStock(x){
     x=x-1;
   }
 
-  database.ref('/').uptade({
-    food:x
-  })
+database.ref('/').update({ food:x })
 }
