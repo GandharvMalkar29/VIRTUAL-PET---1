@@ -14,7 +14,7 @@ function setup() {
   createCanvas(500, 500);
   dog = createSprite(250,250,10,10)
   dog.addImage(dogImg)
-  dog.scale = 0.5
+  dog.scale = 0.3
   //happyDog = createSprite(250,250,10,10)
   //happyDog.addImage(dogImg1)
   database = firebase.database()
